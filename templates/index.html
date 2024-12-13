@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engineering Notes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Engineering Notes</h1>
+    <ul>
+        {% for subject in subjects %}
+            <li><a href="{{ url_for('view', subject=subject) }}">{{ subject }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('upload') }}">Upload Notes</a>
+</body>
+</html>
