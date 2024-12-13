@@ -1,20 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-}
-h1 {
-    color: #333;
-}
-ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a2540; /* Deep blue background */
+    color: #ffffff; /* White text */
 }
-li {
-    margin: 5px 0;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding: 20px;
 }
-a {
-    text-decoration: none;
-    color: #007BFF;
+
+.folder {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    background: linear-gradient(145deg, #1a4971, #0a2540);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-a:hover {
-    text-decoration: underline;
+
+.folder:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.folder:nth-child(1) {
+    background-color: #1e90ff; /* Light blue for Math */
+}
+
+.folder:nth-child(2) {
+    background-color: #6a5acd; /* Medium slate blue for Physics */
+}
+
+.folder:nth-child(3) {
+    background-color: #32cd32; /* Lime green for Indian Constitution */
+}
+
+.folder:nth-child(4) {
+    background-color: #ff6347; /* Tomato red for Basic Electrical Engineering */
 }
